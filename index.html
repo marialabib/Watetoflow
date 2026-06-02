@@ -30,19 +30,6 @@
     overflow-x: hidden;
   }
 
-  /* IP NOTICE */
-  .ip-notice {
-    padding: 0.6rem 2.5rem;
-    background: rgba(45, 255, 126, 0.03);
-    border-bottom: 1px solid var(--border);
-    text-align: center;
-    font-size: 0.72rem;
-    color: var(--muted);
-    letter-spacing: 0.04em;
-    position: relative;
-    z-index: 200;
-  }
-
   /* NAV */
   nav {
     position: fixed;
@@ -58,7 +45,6 @@
   nav.scrolled {
     background: rgba(8, 12, 10, 0.92);
     backdrop-filter: blur(16px);
-    border-bottom: 1px solid var(--border);
   }
 
   .logo {
@@ -184,13 +170,12 @@
   }
 
   .hero-sub {
-    font-size: 1rem;
+    font-size: 1.15rem;
     font-weight: 300;
-    color: rgba(232, 237, 233, 0.65);
-    max-width: 480px;
+    color: rgba(232, 237, 233, 0.7);
+    max-width: 520px;
     margin-bottom: 2.5rem;
     line-height: 1.85;
-    letter-spacing: 0.01em;
   }
 
   .hero-btns {
@@ -280,7 +265,6 @@
   /* STATS */
   .stats {
     padding: 5rem 3rem;
-    border-bottom: 1px solid var(--border);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
@@ -299,12 +283,11 @@
   }
 
   .stat-label {
-    font-size: 0.75rem;
+    font-size: 0.9rem;
     font-weight: 400;
     color: var(--muted);
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    line-height: 1.5;
+    letter-spacing: 0.06em;
+    line-height: 1.6;
   }
 
   /* SECTIONS */
@@ -316,7 +299,7 @@
   .section-inner { max-width: 1100px; margin: 0 auto; }
 
   .section-tag {
-    font-size: 0.68rem;
+    font-size: 0.72rem;
     font-weight: 500;
     letter-spacing: 0.18em;
     text-transform: uppercase;
@@ -347,56 +330,53 @@
   h2 em { font-style: italic; color: var(--accent); }
 
   .section-desc {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: var(--muted);
-    max-width: 520px;
+    max-width: 560px;
     line-height: 1.9;
     font-weight: 300;
   }
 
   /* PROBLEM */
-  .problem { background: var(--bg2); }
+  .problem { background: var(--bg); }
 
   .problem-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1px;
+    gap: 2rem;
     margin-top: 4rem;
-    border: 1px solid var(--border);
-    border-radius: 2px;
-    overflow: hidden;
   }
 
   .problem-card {
-    background: var(--bg2);
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 4px;
     padding: 2.5rem;
     position: relative;
     transition: background 0.3s;
   }
 
-  .problem-card:hover { background: rgba(45, 255, 126, 0.02); }
-
-  .problem-card + .problem-card { border-left: 1px solid var(--border); }
+  .problem-card:hover { background: rgba(45, 255, 126, 0.03); }
 
   .problem-num {
     font-family: 'Cormorant Garamond', serif;
     font-size: 3rem;
     font-weight: 300;
-    color: rgba(45, 255, 126, 0.12);
+    color: rgba(45, 255, 126, 0.15);
     line-height: 1;
     margin-bottom: 1.5rem;
   }
 
   .problem-card h3 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: 400;
     margin-bottom: 1rem;
     color: var(--text);
   }
 
   .problem-card p {
-    font-size: 0.88rem;
+    font-size: 1rem;
     color: var(--muted);
     line-height: 1.85;
     font-weight: 300;
@@ -435,14 +415,14 @@
 
   .step-content h3 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 400;
     margin-bottom: 0.6rem;
     color: var(--text);
   }
 
   .step-content p {
-    font-size: 0.88rem;
+    font-size: 1rem;
     color: var(--muted);
     line-height: 1.8;
     font-weight: 300;
@@ -450,28 +430,27 @@
   }
 
   /* REVENUE */
-  .revenue { background: var(--bg2); }
+  .revenue { background: var(--bg); }
 
   .revenue-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1px;
+    gap: 1.5rem;
     margin-top: 4rem;
-    border: 1px solid var(--border);
-    overflow: hidden;
   }
 
   .revenue-item {
-    padding: 2rem 2.5rem;
-    background: var(--bg2);
-    border-bottom: 1px solid var(--border);
+    padding: 2rem 2rem;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 4px;
     transition: background 0.3s;
     display: flex;
     gap: 1.5rem;
     align-items: flex-start;
   }
 
-  .revenue-item:hover { background: rgba(45, 255, 126, 0.02); }
+  .revenue-item:hover { background: rgba(45, 255, 126, 0.03); }
 
   .revenue-num {
     font-family: 'Cormorant Garamond', serif;
@@ -485,15 +464,15 @@
   }
 
   .revenue-item h3 {
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 500;
     margin-bottom: 0.4rem;
     color: var(--text);
-    letter-spacing: 0.04em;
+    letter-spacing: 0.02em;
   }
 
   .revenue-item p {
-    font-size: 0.82rem;
+    font-size: 0.95rem;
     color: var(--muted);
     line-height: 1.65;
     font-weight: 300;
@@ -502,8 +481,7 @@
   /* SDG */
   .sdg-strip {
     padding: 3rem;
-    border-top: 1px solid var(--border);
-    border-bottom: 1px solid var(--border);
+    background: var(--bg);
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -512,7 +490,7 @@
   }
 
   .sdg-label {
-    font-size: 0.68rem;
+    font-size: 0.72rem;
     letter-spacing: 0.14em;
     text-transform: uppercase;
     color: var(--muted);
@@ -520,11 +498,11 @@
   }
 
   .sdg-badge {
-    font-size: 0.72rem;
+    font-size: 0.78rem;
     font-weight: 400;
     color: rgba(45, 255, 126, 0.7);
     border: 1px solid var(--border);
-    padding: 0.3rem 1rem;
+    padding: 0.35rem 1rem;
     border-radius: 2rem;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -540,20 +518,19 @@
   .team-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 1px;
+    gap: 2rem;
     margin-top: 4rem;
-    border: 1px solid var(--border);
-    overflow: hidden;
   }
 
   .team-card {
     padding: 3rem;
-    background: var(--bg);
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 4px;
     transition: background 0.3s;
   }
 
-  .team-card + .team-card { border-left: 1px solid var(--border); }
-  .team-card:hover { background: rgba(45, 255, 126, 0.015); }
+  .team-card:hover { background: rgba(45, 255, 126, 0.02); }
 
   .team-avatar {
     width: 56px; height: 56px;
@@ -571,14 +548,14 @@
 
   .team-card h3 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 400;
     margin-bottom: 0.3rem;
     color: var(--text);
   }
 
   .team-role {
-    font-size: 0.72rem;
+    font-size: 0.75rem;
     color: var(--accent);
     letter-spacing: 0.1em;
     text-transform: uppercase;
@@ -587,7 +564,7 @@
   }
 
   .team-card p {
-    font-size: 0.85rem;
+    font-size: 1rem;
     color: var(--muted);
     line-height: 1.8;
     font-weight: 300;
@@ -598,7 +575,7 @@
     align-items: center;
     gap: 0.5rem;
     margin-top: 1.5rem;
-    font-size: 0.78rem;
+    font-size: 0.85rem;
     color: var(--muted);
     text-decoration: none;
     letter-spacing: 0.04em;
@@ -613,7 +590,7 @@
   }
 
   /* CONTACT */
-  .contact { background: var(--bg2); }
+  .contact { background: var(--bg); }
 
   .contact-inner {
     max-width: 700px;
@@ -623,6 +600,7 @@
 
   .contact-box {
     border: 1px solid var(--border);
+    border-radius: 4px;
     padding: 4rem 3rem;
     margin-top: 3.5rem;
     position: relative;
@@ -640,15 +618,14 @@
 
   .contact-box h3 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: 300;
     margin-bottom: 1rem;
-    letter-spacing: -0.01em;
   }
 
   .contact-box p {
     color: var(--muted);
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin-bottom: 2.5rem;
     line-height: 1.85;
     font-weight: 300;
@@ -671,12 +648,12 @@
     align-items: center;
     justify-content: center;
     gap: 0.75rem;
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     color: var(--muted);
   }
 
   .contact-email-item span {
-    font-size: 0.72rem;
+    font-size: 0.75rem;
     letter-spacing: 0.08em;
     text-transform: uppercase;
   }
@@ -694,8 +671,17 @@
     padding: 2.5rem 3rem;
     border-top: 1px solid var(--border);
     display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-top {
+    display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     flex-wrap: wrap;
     gap: 1rem;
   }
@@ -718,6 +704,17 @@
     text-transform: uppercase;
   }
 
+  /* IP NOTICE in footer */
+  .footer-ip {
+    font-size: 0.68rem;
+    color: rgba(122, 140, 125, 0.5);
+    letter-spacing: 0.04em;
+    border-top: 1px solid var(--border);
+    padding-top: 1rem;
+    width: 100%;
+    text-align: center;
+  }
+
   /* ANIMATIONS */
   .fade-up {
     opacity: 0;
@@ -737,19 +734,13 @@
     .hero { padding: 0 1.5rem 4rem; }
     section { padding: 5rem 1.5rem; }
     .stats { padding: 3.5rem 1.5rem; }
-    .problem-card + .problem-card { border-left: none; border-top: 1px solid var(--border); }
-    .team-card + .team-card { border-left: none; border-top: 1px solid var(--border); }
     .process-step { grid-template-columns: 50px 1fr; }
-    footer { flex-direction: column; text-align: center; }
+    footer { padding: 2rem 1.5rem; }
     .scroll-indicator { display: none; }
   }
 </style>
 </head>
 <body>
-
-<div class="ip-notice">
-  Confidential &amp; Proprietary &nbsp;·&nbsp; WasteToFlow © 2026 &nbsp;·&nbsp; All rights reserved &nbsp;·&nbsp; Work commenced March 2026
-</div>
 
 <nav id="navbar">
   <a href="#" class="logo">Waste<span>To</span>Flow</a>
@@ -772,7 +763,7 @@
   <div class="hero-overlay"></div>
 
   <div class="hero-content">
-    <div class="hero-tag">Seed Phase · 2026 · Egypt × Germany</div>
+    <div class="hero-tag">Egypt × Germany</div>
     <h1>Turning Organic Waste<br>into <em>Clean Energy,</em><br>ESG Data &amp; Economic Value</h1>
     <p class="hero-sub">
       A German-Egyptian initiative transforming Cairo's organic waste stream into decentralized biogas energy, verified carbon credits, and real-time ESG intelligence.
@@ -988,23 +979,22 @@
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-logo">Waste<span>To</span>Flow</div>
-  <p>Egypt × Germany · Seed Phase · 2026</p>
-  <p>Waste into Energy. Data into Impact.</p>
+  <div class="footer-top">
+    <div class="footer-logo">Waste<span>To</span>Flow</div>
+    <p>Egypt × Germany · Seed Phase · 2026</p>
+    <p>Waste into Energy. Data into Impact.</p>
+  </div>
+  <div class="footer-ip">
+    Confidential &amp; Proprietary &nbsp;·&nbsp; WasteToFlow © 2026 &nbsp;·&nbsp; All rights reserved &nbsp;·&nbsp; Work commenced March 2026
+  </div>
 </footer>
 
 <script>
-  // Nav scroll effect
   const navbar = document.getElementById('navbar');
   window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-      navbar.classList.add('scrolled');
-    } else {
-      navbar.classList.remove('scrolled');
-    }
+    navbar.classList.toggle('scrolled', window.scrollY > 50);
   });
 
-  // Fade up animations
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry, i) => {
       if (entry.isIntersecting) {
